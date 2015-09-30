@@ -1,22 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
+############################
+# bootstrap.sh
+# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+############################
 
-cd "$(dirname "${BASH_SOURCE}")";
+########## Variables
+dir=~/dotfiles
+files="bashrc aliases bash_profile bash_prompt curlrc editorconfig exports functions gdbinit git gitconfig gitignore hgignore hushlogin inputrc screenrc vimrc vim wgetrc"    # list of files/folders to symlink in homedir
 
-git pull origin master;
-
-function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
-	source ~/.bash_profile;
-}
-
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doIt;
-else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
-	echo "";
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		doIt;
-	fi;
-fi;
-unset doIt;
+# create symlinks 
+for file in $files; do
+    echo "Creating symlink from $dir/.$file to ~/.$file in home directory."
+    ln -s $dir/.$file ~/.$file
+done
