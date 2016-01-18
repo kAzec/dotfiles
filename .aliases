@@ -7,9 +7,13 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias p="cd ~/Documents/Dropbox"
+alias p="cd $HOME/Documents/Projects"
 alias g="git"
-
+alias subl="sublime"
+alias ping10="ping -c 10"
+alias brewu="brew update && brew upgrade"
+alias proxify="mv ~/.curlrc.bak ~/.curlrc && git config --global http.proxy 127.0.0.1:8103"
+alias unproxify="mv ~/.curlrc ~/.curlrc.bak && git config --global --unset http.proxy"
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -32,6 +36,7 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
+alias which='which '
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'

@@ -3,6 +3,14 @@ function mkcd() {
 	mkdir -p "$@" && cd "$_";
 }
 
+function task() {
+	nohup $1 >/dev/null 2>&1 &
+}
+
+function search() {
+	grep -rE "$1" ./* --color=auto 
+}
+
 # Change working directory to the top-most Finder window location
 function cdfinder() {
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";

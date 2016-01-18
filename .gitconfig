@@ -177,3 +177,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[http]
+	proxy = 127.0.0.1:8103
