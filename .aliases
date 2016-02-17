@@ -12,8 +12,15 @@ alias g="git"
 alias subl="sublime"
 alias ping10="ping -c 10"
 alias brewu="brew update && brew upgrade"
-alias proxify="mv ~/.curlrc.bak ~/.curlrc && git config --global http.proxy 127.0.0.1:8103"
+alias proxify="mv ~/.curlrc.bak ~/.curlrc && git config --global http.proxy 127.0.0.1:8087"
 alias unproxify="mv ~/.curlrc ~/.curlrc.bak && git config --global --unset http.proxy"
+
+alias xiami="php -f ~/Documents/Scripts/xiami/xiami.php"
+
+alias xxnet-set-debug="ln -s -f ~/Documents/Tools/XX-Net/gae_proxy/setup-debug.py ~/Documents/Tools/XX-Net/gae_proxy/setup.py"
+alias xxnet-set-info="ln -s -f ~/Documents/Tools/XX-Net/gae_proxy/setup-info.py ~/Documents/Tools/XX-Net/gae_proxy/setup.py"
+alias xxnet-set-silent="ln -s -f ~/Documents/Tools/XX-Net/gae_proxy/setup-silent.py ~/Documents/Tools/XX-Net/gae_proxy/setup.py"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
