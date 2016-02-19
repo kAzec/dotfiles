@@ -182,4 +182,4 @@
 	smudge = git-lfs smudge %f
 	required = true
 [http]
-	proxy = 127.0.0.1:8080
+	proxy = 
