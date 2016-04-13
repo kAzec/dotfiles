@@ -11,6 +11,14 @@ function search() {
 	grep -rE "$1" ./* --color=auto 
 }
 
+function b64e() {
+	echo $1 | base64
+}
+
+function b64d() {
+	echo $1 | base64 -D	
+}
+
 # Change working directory to the top-most Finder window location
 function cdfinder() {
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";

@@ -12,10 +12,9 @@ alias g="git"
 alias subl="sublime"
 alias ping10="ping -c 10"
 alias brewu="brew update && brew upgrade"
-alias proxify="mv ~/.curlrc.bak ~/.curlrc && git config --global http.proxy 127.0.0.1:8080"
-alias unproxify="mv ~/.curlrc ~/.curlrc.bak && git config --global http.proxy ''" 
-
-alias xiami="php -f ~/Documents/Scripts/xiami/xiami.php"
+alias proxy="proxychains4 "
+alias proxyon="export http_proxy='http://127.0.0.1:8080';export https_proxy='http://127.0.0.1:8080';mv ~/.curlrc.bak ~/.curlrc && git config --global http.proxy 127.0.0.1:8080"
+alias proxyoff="export http_proxy='';export https_proxy='';mv ~/.curlrc ~/.curlrc.bak && git config --global http.proxy ''" 
 
 alias xxnet-set-debug="ln -s -f ~/Documents/Tools/XX-Net/gae_proxy/setup-debug.py ~/Documents/Tools/XX-Net/gae_proxy/setup.py"
 alias xxnet-set-info="ln -s -f ~/Documents/Tools/XX-Net/gae_proxy/setup-info.py ~/Documents/Tools/XX-Net/gae_proxy/setup.py"
