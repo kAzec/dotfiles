@@ -19,9 +19,59 @@ function b64d() {
 	echo $1 | base64 -D	
 }
 
+function rmatch { 
+	gawk 'match($0,/'$1'/, ary) {print ary['${2:-'0'}']}';
+}
+
+function mvdotfiles {
+	for arg
+	do
+		mv $HOME/$arg $HOME/.dotfiles/$arg
+		ln -s $HOME/.dotfiles/$arg $HOME/$arg
+	done
+	unset arg
+}
+
+function aqi {
+	local data=$(mktemp)
+	curl --silent http://www.stateair.net/mobile/post/1/1.html > $data
+
+	# Most recent aqi report
+	cat $data | rmatch '(Most\sRecent\sAQI.+)<\/span>' 1
+	cat $data | rmatch '([0-9]+\sAQI\s.+)<\/span>' 1
+	
+	# Past 24 hours report
+	echo -n "Past 24 Hours was "
+	cat $data | rmatch 'aqi_[0-9]">\s*(.+)<\/span>' 1
+
+	rm $data
+}
+
+alias cwdfinder="osascript -e 'tell app \"Finder\" to POSIX path of (insertion location as alias)'"
+
 # Change working directory to the top-most Finder window location
 function cdfinder() {
-	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
+	cd "$(cwdfinder)"
+}
+
+function p() {
+    cd ~/Documents/Projects/$1
+}
+
+function cbuild() {
+	if [ -z "${2}" ]; then 
+        local platform='--platform iOS'
+    else 
+        local platform='--platform '$2''
+    fi
+
+    if [ -z "${3}" ]; then 
+        local configuration='--configuration debug'
+    else 
+        local configuration='--configuration '$2''
+    fi  
+
+    carthage build $1 $platform $configuration
 }
 
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
@@ -115,9 +165,9 @@ function subld() {
 # given location
 function vimd() {
 	if [ $# -eq 0 ]; then
-		vim .;
+		neovim .;
 	else
-		vim "$@";
+		neovim "$@";
 	fi;
 }
 

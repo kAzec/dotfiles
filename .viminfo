@@ -7,11 +7,23 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/usr
+
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :q
-:Q
+:q!
+:wq
+:Wq
+:.,.+1!-
+:wq!
+:.3128
 
 # Search String History (newest to oldest):
+?/usr/bin/env ruby
 
 # Expression History (newest to oldest):
 
@@ -20,9 +32,342 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+""0	LINE	0
+	# add proxy here ...
+	# defaults set to "tor"
+"1	LINE	0
+	
+"2	LINE	0
+	# add proxy here ...
+	# defaults set to "tor"
+"3	LINE	0
+	# meanwile
+"4	LINE	0
+	# You may need to dmanually set your language environment
+"5	LINE	0
+	
+"6	LINE	0
+	fi
+"7	LINE	0
+	    PS1="\[\033[m\]|\[\033[1;35m\]\t\[\033[m\]|\[\e[1m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
+"8	LINE	0
+	else
+"9	LINE	0
+	    PS1="\[\033[m\]|\[\033[1;35m\]\t\[\033[m\]|\[\e[1;31m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
+"u	CHAR	0
+	it€kulj€kb€kbii€kb€kr€kr€kr€kr€kr€kr€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kd€kdbrew 
+"-	CHAR	0
+	e
 
 # File marks:
+'0  22  0  /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/qlcolorcode.rb
+'1  1  0  /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/betterzipql.rb
+'2  1  0  /private/var/tmp/brew.q8vYj4wx
+'3  68  71  ~/Downloads/xiami.py3
+'4  50  4  /usr/local/Library/Taps/homebrew/homebrew-core/Formula/python.rb
+'5  20  41  ~/.meow/rc
+'6  10  33  ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+'7  30  28  /usr/local/etc/tor/torrc
+'8  112  18  /usr/local/etc/proxychains.conf
+'9  82  0  ~/Documents/Projects/ReactiveKit/ReactiveKit/Atomic.swift
 
 # Jumplist (newest first):
+-'  22  0  /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/qlcolorcode.rb
+-'  1  0  /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/qlcolorcode.rb
+-'  1  0  /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/betterzipql.rb
+-'  1  0  /private/var/tmp/brew.q8vYj4wx
+-'  68  71  ~/Downloads/xiami.py3
+-'  1  0  ~/Downloads/xiami.py3
+-'  50  4  /usr/local/Library/Taps/homebrew/homebrew-core/Formula/python.rb
+-'  1  0  /usr/local/Library/Taps/homebrew/homebrew-core/Formula/python.rb
+-'  20  41  ~/.meow/rc
+-'  1  0  ~/.meow/rc
+-'  10  33  ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+-'  1  0  ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+-'  30  28  /usr/local/etc/tor/torrc
+-'  9  0  /usr/local/etc/tor
+-'  8  0  /usr/local/etc/tor
+-'  112  18  /usr/local/etc/proxychains.conf
+-'  1  0  /usr/local/etc/proxychains.conf
+-'  82  0  ~/Documents/Projects/ReactiveKit/ReactiveKit/Atomic.swift
+-'  1  0  ~/Documents/Projects/ReactiveKit/ReactiveKit/Atomic.swift
+-'  282  6  /usr/share/emacs/22.1/etc/spook.lines
+-'  1  0  /usr/share/emacs/22.1/etc/spook.lines
+-'  6  0  ~/Documents/Projects/blog/.git/COMMIT_EDITMSG
+-'  1  0  ~/Documents/Projects/blog/.git/COMMIT_EDITMSG
+-'  1  0  ~/.aria2/aria2.conf
+-'  1  0  ~/.aliases
+-'  1  8  ~/.curlrc
+-'  48  0  ~/.aria2/aria2.conf
+-'  14  0  ~/.aria2/aria2.conf
+-'  1  0  /Users/Shared/CleanMyMac 3/.licence
+-'  260  7  ~/Downloads/brew_graph.rb
+-'  1  0  ~/Downloads/brew_graph.rb
+-'  1  17  ~/.octaverc
+-'  2  24  ~/.config/youtube-dl/config
+-'  1  0  ~/.config/youtube-dl/config
+-'  1  0  /private/etc/youtube-dl.conf
+-'  31  0  ~/.functions
+-'  1  0  ~/.functions
+-'  51  0  ~/.aliases
+-'  4  17  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  10  18  ~/.zshrc
+-'  58  0  ~/.zshrc
+-'  60  0  ~/.zshrc
+-'  65  18  ~/.zshrc
+-'  6  17  ~/.zshrc
+-'  12  18  ~/.zshrc
+-'  2  0  ~/.zshrc
+-'  8  0  ~/.zshrc
+-'  120  0  ~/.functions
+-'  11  9  ~/.functions
+-'  1  0  ~/.f
+-'  30  0  ~/.aliases
+-'  1  0  /usr/local/etc/mpv/mpv.conf
+-'  76  0  /private/etc/sudoers
+-'  1  0  /private/etc/sudoers
+-'  170  0  /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/pyplot.py
+-'  1  0  /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/pyplot.py
+-'  10  11  ~/.aliases
+-'  13  0  ~/.aliases
+-'  12  18  ~/.aliases
+-'  7  26  ~/.functions
+-'  8  0  ~/.functions
+-'  6  12  ~/.functions
+-'  1  0  ~/.aria2/aria2.session
+-'  30  22  ~/.aria2/aria2.conf
+-'  72  0  ~/.aria2/aria2.session
+-'  1  0  ~/.profile
+-'  6  0  /private/etc/profile
+-'  1  0  /private/etc/profile
+-'  1  0  /private/etc/paths
+-'  116  0  ~/.bash_prompt
+-'  1  0  ~/.bash_prompt
+-'  48  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  36  19  ~/.aliases
+-'  61  0  ~/.aliases
+-'  2  0  ~/.bash_profile
+-'  19  0  ~/.vimrc
+-'  6  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  83  4  ~/.vimrc
+-'  1  28  ~/.bashrc
+-'  3  0  ~/.dotfiles/.vim/colors/solarized.vim
+-'  1  0  ~/.dotfiles/.vim/colors/solarized.vim
+-'  128  0  ~/.functions
+-'  5  0  ~/.vimrc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
+-'  1  0  ~/.bash_rc
 
 # History of marks within files (newest to oldest):
+
+> /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/qlcolorcode.rb
+	"	22	0
+
+> /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/betterzipql.rb
+	"	1	0
+
+> /private/var/tmp/brew.q8vYj4wx
+	"	1	0
+
+> ~/Downloads/xiami.py3
+	"	68	71
+	^	68	72
+	.	68	0
+	+	68	0
+
+> /usr/local/Library/Taps/homebrew/homebrew-core/Formula/python.rb
+	"	50	4
+
+> ~/.meow/rc
+	"	20	41
+	^	12	2
+	.	12	1
+	+	12	1
+
+> ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+	"	10	33
+	^	10	34
+	.	10	34
+	+	10	34
+
+> /usr/local/etc/tor/torrc
+	"	30	28
+	^	30	29
+	.	30	28
+	+	30	28
+
+> /usr/local/etc/proxychains.conf
+	"	112	18
+	^	112	19
+	.	112	18
+	+	112	21
+	+	74	1
+	+	89	0
+	+	90	0
+	+	91	0
+	+	86	0
+	+	112	0
+	+	112	18
+
+> ~/Documents/Projects/ReactiveKit/ReactiveKit/Atomic.swift
+	"	82	0
+	^	82	0
+	.	80	28
+	+	31	10
+	+	78	34
+	+	80	0
+	+	78	26
+	+	80	28
+
+> /usr/share/emacs/22.1/etc/spook.lines
+	"	282	6
+
+> ~/Documents/Projects/blog/.git/COMMIT_EDITMSG
+	"	6	0
+	^	6	0
+	.	6	0
+	+	6	0
+
+> ~/.aria2/aria2.conf
+	"	1	0
+	^	14	0
+	.	14	0
+	+	14	0
+
+> ~/.aliases
+	"	1	0
+	^	10	12
+	.	10	11
+	+	10	0
+	+	12	18
+	+	36	19
+	+	13	24
+	+	10	11
+
+> ~/.curlrc
+	"	1	8
+	^	1	22
+	.	1	21
+	+	1	21
+
+> /Users/Shared/CleanMyMac 3/.licence
+	"	1	0
+
+> ~/Downloads/brew_graph.rb
+	"	260	7
+	^	260	8
+	.	260	0
+	+	260	0
+
+> ~/.octaverc
+	"	1	17
+	^	1	22
+	.	1	0
+	+	1	0
+
+> ~/.config/youtube-dl/config
+	"	2	24
+	^	2	25
+	.	2	25
+	+	1	0
+	+	1	22
+	+	2	25
+
+> /private/etc/youtube-dl.conf
+	"	1	0
+
+> ~/.functions
+	"	31	0
+	^	120	1
+	.	11	16
+	+	6	23
+	+	7	8
+	+	6	12
+	+	8	0
+	+	11	16
+
+> ~/.zshrc
+	"	4	17
+	^	4	18
+	.	4	17
+	+	1	18
+	+	1	0
+	+	1	0
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	2
+	+	8	2
+	+	1	28
+	+	8	0
+	+	8	0
+	+	3	0
+	+	1	28
+	+	12	11
+	+	3	0
+	+	6	17
+	+	65	0
+	+	65	0
+	+	10	11
+	+	4	17
+
+> ~/.f
+	"	1	0
+
+> /usr/local/etc/mpv/mpv.conf
+	"	1	0
+
+> /private/etc/sudoers
+	"	76	0
+
+> /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/pyplot.py
+	"	170	0
+
+> ~/.aria2/aria2.session
+	"	1	0
+
+> ~/.profile
+	"	1	0
+
+> /private/etc/profile
+	"	6	0
+
+> /private/etc/paths
+	"	1	0
+
+> ~/.bash_prompt
+	"	116	0
+
+> ~/.bash_profile
+	"	48	0
+
+> ~/.vimrc
+	"	19	0
+	^	6	0
+	.	7	0
+	+	6	0
+	+	6	0
+	+	7	0
+
+> ~/.bashrc
+	"	1	28
+
+> ~/.dotfiles/.vim/colors/solarized.vim
+	"	3	0
+
+> ~/.bash_rc
+	"	1	0

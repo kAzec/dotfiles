@@ -1,13 +1,14 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+# Add ~/Documents/Scripts to the `$PATH`
+export PATH="$HOME/Documents/Scripts:$PATH";
 
 # Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+for file in ~/.{bash_prompt,exports,aliases,functions}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# Setting up proxy by default.
+proxyon >/dev/null 2>&1
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;

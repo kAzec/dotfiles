@@ -28,3 +28,8 @@ Temporary Items
 
 # Compiled Python files
 *.pyc
+
+# Credentials
+.bash_history
+.zsh_history
+.credentials
