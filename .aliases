@@ -12,6 +12,9 @@ alias g="git"
 alias subl="sublime"
 alias ping10="ping -c 10"
 alias brewu="brew update && brew upgrade"
+alias brewc="brew cleanup && brew prune"
+alias pipu="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+alias pip3u="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U"
 
 alias you-getp="proxy -q you-get"
 
